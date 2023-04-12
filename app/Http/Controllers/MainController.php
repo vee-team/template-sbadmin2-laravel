@@ -50,6 +50,37 @@ class MainController extends Controller
         return view('pages.utilities.other', compact('menu'));
     }
 
+    // Pages
+    public function login()
+    {
+        $menu = 'Login';
+        return view('pages.auth.login', compact('menu'));
+    }
+
+    public function register()
+    {
+        $menu = 'Register';
+        return view('pages.auth.register', compact('menu'));
+    }
+
+    public function forgot_password()
+    {
+        $menu = 'Forgot Password';
+        return view('pages.auth.forgot_password', compact('menu'));
+    }
+
+    public function not_found()
+    {
+        $menu = '404 Not Found';
+        return view('pages.404', compact('menu'));
+    }
+
+    public function blank()
+    {
+        $menu = 'Blank';
+        return view('pages.blank', compact('menu'));
+    }
+
     public function charts()
     {
         $menu = 'Charts';
